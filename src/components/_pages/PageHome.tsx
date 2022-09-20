@@ -1,6 +1,6 @@
-import { FC } from "react";
-import Head from "next/head";
-import styles from "../../../styles/Home.module.css";
+import { FC } from "react"
+import Head from "next/head"
+import styles from "../../../styles/Home.module.css"
 
 const PageHome: FC = () => {
   return (
@@ -17,7 +17,7 @@ const PageHome: FC = () => {
         </h1>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default PageHome;
+export default PageHome

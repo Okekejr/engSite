@@ -1,0 +1,110 @@
+import { Button, ButtonProps, Flex, IconProps, Text } from "@chakra-ui/react"
+import { ArrowRight } from "./_icons/ArrowRight"
+import { fonts } from "theme/Fonts"
+import { Link } from "./Link"
+
+interface Props extends ButtonProps {
+  buttonTitle?: string
+  showComingSoon?: boolean
+  hasIcon?: boolean
+  href?: string
+  buttonTextfontSize?: string | { [key: string]: string }
+  onClick?: () => void
+  arrowStyles?: IconProps
+  isExternal?: boolean
+}
+
+export const SommButton: React.FC<Props> = ({
+  buttonTitle = "Get Started",
+  showComingSoon = false,
+  hasIcon = true,
+  href = "http://app.gaugecash.com/",
+  buttonTextfontSize = "button",
+  arrowStyles,
+  isExternal,
+  ...rest
+}) => {
+  const handleClick = () => {
+    if (rest.onClick != null) {
+      rest.onClick()
+    }
+  }
+
+  const comingSoonStyles = showComingSoon
+    ? {
+        ".coming-soon": {
+          display: "block",
+          opacity: 1,
+        },
+        ".coming-soon-wrap": {
+          mt: -5,
+        },
+      }
+    : {}
+
+  return (
+    <Button
+      fontSize={buttonTextfontSize}
+      as={href === "" ? undefined : Link}
+      href={href}
+      isExternal={isExternal}
+      color="neutral.100"
+      border="2px solid"
+      borderColor="primary.base"
+      backgroundColor="surface.quartnerary"
+      borderRadius="3rem"
+      backdropFilter="blur(8px)"
+      onClick={handleClick}
+      height="initial"
+      type="button"
+      px={10}
+      py={6}
+      _hover={{
+        textDecoration: "none",
+        backgroundColor: "surface.quinary",
+        svg: {
+          transform: "translate3d(4px, 0, 0)",
+        },
+        ...comingSoonStyles,
+      }}
+      _active={{
+        backgroundColor: "surface.senary",
+      }}
+      {...rest}
+    >
+      <Flex alignItems="center">
+        <Flex
+          flexDir="column"
+          className="coming-soon-wrap"
+          transition="all 175ms ease"
+        >
+          <Text fontFamily={fonts.heading} fontWeight="600">
+            {buttonTitle}
+          </Text>
+          <Text
+            fontFamily={fonts.heading}
+            opacity="0"
+            transition="opacity 175ms ease"
+            className="coming-soon"
+            height="0"
+            color="neutral.300"
+            top="2px"
+            position="relative"
+            display="none"
+          >
+            (Coming soon)
+          </Text>
+        </Flex>
+        {hasIcon && (
+          <ArrowRight
+            ml={3}
+            transition="all .175s ease"
+            width={{ base: "16px", lg: "24px" }}
+            height={{ base: "16px", lg: "24px" }}
+            {...arrowStyles}
+          />
+        )}
+      </Flex>
+    </Button>
+  )
+}
