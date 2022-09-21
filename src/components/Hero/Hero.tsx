@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { Box, Container } from "@chakra-ui/react"
-import { SommButton } from "components/SommButton"
+import { SommButton } from "components/GauButton"
 
 export const Hero: FC = () => {
   return (

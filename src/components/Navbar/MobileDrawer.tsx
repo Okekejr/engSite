@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react"
 import { FiX } from "react-icons/fi"
 import { MobileNavLinks } from "./MobileNavLinks"
-import { SommButton } from "components/SommButton"
+import { SommButton } from "components/GauButton"
 
 interface Props extends DrawerProps {
   isOpen: boolean

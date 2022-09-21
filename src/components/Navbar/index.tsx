@@ -46,7 +46,7 @@ export const Navbar: FC<Props> = ({ isShrunk, ...rest }) => {
         zIndex={1}
       >
         <Link aria-label="Logo" href="/">
-          <Logo w={32} h={12} />
+          <Logo w={32} h={14} />
         </Link>
 
         <NavLinks
