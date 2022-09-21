@@ -32,10 +32,14 @@ export const Hero: FC = () => {
             }}
             pb={{ base: 16, md: 36 }}
           >
-            <Heading fontWeight="black" fontSize="4rem" pb={4}>
+            <Heading
+              fontWeight="black"
+              fontSize={{ base: "2.5rem", md: "4rem" }}
+              pb={4}
+            >
               World's First Decentralized Reserve Currency
             </Heading>
-            <Text fontSize="1.5rem">
+            <Text fontSize={{ base: "1rem", md: "1.5rem" }}>
               Its your Money, It's your Work, It's yur Heritage, This time
               around, NO Government, No Central Bank, NO Private Company will be
               able to jeopardize or risk what you own.
