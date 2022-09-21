@@ -1,4 +1,4 @@
-export const ArrowTopRight: React.VFC = () => (
+export const ArrowTopRight: React.FC = () => (
   <svg
     width="15"
     height="15"

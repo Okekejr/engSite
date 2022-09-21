@@ -9,11 +9,5 @@ export const about: IRouteGroup = {
       title: "Company",
       active: true,
     },
-    {
-      id: "jobs-nav-item",
-      url: "/jobs",
-      title: "Jobs",
-      active: true,
-    },
   ],
 }

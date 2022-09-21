@@ -5,7 +5,6 @@ import { Link } from "./Link"
 
 interface Props extends ButtonProps {
   buttonTitle?: string
-  showComingSoon?: boolean
   hasIcon?: boolean
   href?: string
   buttonTextfontSize?: string | { [key: string]: string }
@@ -16,7 +15,6 @@ interface Props extends ButtonProps {
 
 export const SommButton: React.FC<Props> = ({
   buttonTitle = "Get Started",
-  showComingSoon = false,
   hasIcon = true,
   href = "http://app.gaugecash.com/",
   buttonTextfontSize = "button",
@@ -29,18 +27,6 @@ export const SommButton: React.FC<Props> = ({
       rest.onClick()
     }
   }
-
-  const comingSoonStyles = showComingSoon
-    ? {
-        ".coming-soon": {
-          display: "block",
-          opacity: 1,
-        },
-        ".coming-soon-wrap": {
-          mt: -5,
-        },
-      }
-    : {}
 
   return (
     <Button
@@ -65,7 +51,6 @@ export const SommButton: React.FC<Props> = ({
         svg: {
           transform: "translate3d(4px, 0, 0)",
         },
-        ...comingSoonStyles,
       }}
       _active={{
         backgroundColor: "surface.senary",
@@ -80,19 +65,6 @@ export const SommButton: React.FC<Props> = ({
         >
           <Text fontFamily={fonts.heading} fontWeight="600">
             {buttonTitle}
-          </Text>
-          <Text
-            fontFamily={fonts.heading}
-            opacity="0"
-            transition="opacity 175ms ease"
-            className="coming-soon"
-            height="0"
-            color="neutral.300"
-            top="2px"
-            position="relative"
-            display="none"
-          >
-            (Coming soon)
           </Text>
         </Flex>
         {hasIcon && (

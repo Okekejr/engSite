@@ -1,4 +1,4 @@
-export const Telegram: React.VFC = () => (
+export const Telegram: React.FC = () => (
   <svg
     width="40"
     height="40"

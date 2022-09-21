@@ -1,4 +1,4 @@
-export const Twitter: React.VFC = () => (
+export const Twitter: React.FC = () => (
   <svg
     width="30"
     height="30"

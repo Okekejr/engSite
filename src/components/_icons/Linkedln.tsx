@@ -1,4 +1,4 @@
-export const Linkedln: React.VFC = () => (
+export const Linkedln: React.FC = () => (
   <svg
     width="24"
     height="24"

@@ -3,23 +3,12 @@ import { IRouteGroup } from "./IRoute"
 import { socialsList } from '../socialsList'
 
 export const community: IRouteGroup = {
-  title: "Community",
+  title: "Our Space",
   routes: [
     {
-      id: "events-nav-item",
-      url: "/events",
-      title: "Events",
-    },
-    {
-      id: "forum-nav-item",
-      url: "https://community.sommelier.finance",
-      title: "Forum",
-      isExternal: true,
-    },
-    {
-      id: "discord-nav-item",
-      url: socialsList.discord.url,
-      title: "Discord",
+      id: 'github-nav-item',
+      url: socialsList.github.url,
+      title: 'Github',
       isExternal: true,
     },
     {

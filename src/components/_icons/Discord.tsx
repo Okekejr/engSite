@@ -1,4 +1,4 @@
-export const Discord: React.VFC = () => (
+export const Discord: React.FC = () => (
   <svg
     width="40"
     height="40"
