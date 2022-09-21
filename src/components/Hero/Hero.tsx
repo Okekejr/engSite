@@ -1,6 +1,6 @@
 import { FC } from "react"
 import { Box, Container } from "@chakra-ui/react"
-import { SommButton } from "components/GauButton"
+import { GauButton } from "components/GauButton"
 
 export const Hero: FC = () => {
   return (
@@ -32,7 +32,7 @@ export const Hero: FC = () => {
             }}
             pb={{ base: 16, md: 36 }}
           >
-            {/* <SommButton w="max-content" mt={{ base: 10, md: 20 }} /> */}
+            {/* <GauButton w="max-content" mt={{ base: 10, md: 20 }} /> */}
           </Box>
         </Container>
       </Container>

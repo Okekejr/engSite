@@ -13,7 +13,7 @@ interface Props extends ButtonProps {
   isExternal?: boolean
 }
 
-export const SommButton: React.FC<Props> = ({
+export const GauButton: React.FC<Props> = ({
   buttonTitle = "Get Started",
   hasIcon = true,
   href = "http://app.gaugecash.com/",

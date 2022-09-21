@@ -13,7 +13,7 @@ import {
 } from "@chakra-ui/react"
 import { FiX } from "react-icons/fi"
 import { MobileNavLinks } from "./MobileNavLinks"
-import { SommButton } from "components/GauButton"
+import { GauButton } from "components/GauButton"
 
 interface Props extends DrawerProps {
   isOpen: boolean
@@ -46,7 +46,7 @@ export const MobileDrawer: FC<Omit<Props, "children">> = ({
             mt="8rem"
           />
 
-          <SommButton buttonTitle="Launch App" hasIcon={false} />
+          <GauButton buttonTitle="Launch App" hasIcon={false} />
         </DrawerBody>
       </DrawerContent>
     </Drawer>
