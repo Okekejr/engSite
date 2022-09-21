@@ -1,5 +1,5 @@
 import { FC } from "react"
-import { Box, Container } from "@chakra-ui/react"
+import { Box, Container, Heading, Text } from "@chakra-ui/react"
 import { GauButton } from "components/GauButton"
 
 export const Hero: FC = () => {
@@ -13,7 +13,7 @@ export const Hero: FC = () => {
         alignItems="flex-end"
         position="relative"
         px={{ base: 6, lg: 24 }}
-        pt={{ base: 4, md: 16 }}
+        pt={{ base: 4, md: 10 }}
         pb={{ sm: 8, md: 8 }}
         mb={{ base: "180px", md: "80px" }}
       >
@@ -32,7 +32,19 @@ export const Hero: FC = () => {
             }}
             pb={{ base: 16, md: 36 }}
           >
-            {/* <GauButton w="max-content" mt={{ base: 10, md: 20 }} /> */}
+            <Heading
+              fontWeight="black"
+              fontSize={{ base: "2.5rem", md: "4rem" }}
+              pb={4}
+            >
+              World's First Decentralized Reserve Currency
+            </Heading>
+            <Text fontSize={{ base: "1rem", md: "1.5rem" }}>
+              Its your Money, It's your Work, It's yur Heritage, This time
+              around, NO Government, No Central Bank, NO Private Company will be
+              able to jeopardize or risk what you own.
+            </Text>
+            <GauButton w="max-content" mt={{ base: 10, md: 10 }} />
           </Box>
         </Container>
       </Container>

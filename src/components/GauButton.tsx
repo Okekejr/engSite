@@ -33,7 +33,7 @@ export const GauButton: React.FC<Props> = ({
       fontSize={buttonTextfontSize}
       as={href === "" ? undefined : Link}
       href={href}
-      isExternal={isExternal}
+      isExternal={true}
       color="neutral.100"
       border="2px solid"
       borderColor="primary.base"
@@ -43,7 +43,7 @@ export const GauButton: React.FC<Props> = ({
       onClick={handleClick}
       height="initial"
       type="button"
-      px={10}
+      px={12}
       py={6}
       _hover={{
         textDecoration: "none",
