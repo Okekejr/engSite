@@ -9,6 +9,11 @@ export const resources: IRouteGroup = {
       title: "Blog",
     },
     {
+      id: "whitepaper-nav-item",
+      url: "/whitepaper",
+      title: "Whitepaper",
+    },
+    {
       id: "docs-nav-item",
       url: "https://gaugecash.gitbook.io/gaugecash/",
       title: "Documentation",

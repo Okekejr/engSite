@@ -23,7 +23,6 @@ export const Navbar: FC<Props> = ({ isShrunk, ...rest }) => {
       top="0"
       w="100%"
       justify="center"
-      color="neutral.300"
       _before={{
         bg: isShrunk ? "rgba(26, 26, 26, 0.5)" : "",
         content: "''",
