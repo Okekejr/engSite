@@ -40,8 +40,8 @@ export const Hero: FC = () => {
               World's First Decentralized Reserve Currency
             </Heading>
             <Text fontSize={{ base: "1rem", md: "1.5rem" }}>
-              Its your Money, It's your Work, It's yur Heritage, This time
-              around, NO Government, No Central Bank, NO Private Company will be
+              Its your Money, It's your Work, It's your Heritage, This time
+              around, NO Government, NO Central Bank, NO Private Company will be
               able to jeopardize or risk what you own.
             </Text>
             <GauButton w="max-content" mt={{ base: 10, md: 10 }} />
