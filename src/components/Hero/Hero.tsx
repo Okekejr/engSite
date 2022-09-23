@@ -1,10 +1,10 @@
 import { FC } from "react"
-import { Box, Container, Heading, Text } from "@chakra-ui/react"
+import { Box, Container, Heading, Text, BoxProps } from "@chakra-ui/react"
 import { GauButton } from "components/GauButton"
 
-export const Hero: FC = () => {
+export const Hero: FC<BoxProps> = props => {
   return (
-    <Box position="relative" zIndex="docked">
+    <Box position="relative" zIndex="docked" {...props}>
       <Container
         maxW="container.xl"
         w="100%"
