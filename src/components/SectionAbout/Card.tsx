@@ -1,8 +1,11 @@
 import { Flex, FlexProps, Image, Text, Heading } from "@chakra-ui/react"
-import { DataType } from "./AboutData"
 
 interface Props extends FlexProps {
-  data: DataType
+  data: {
+    Header: string
+    SubHeading: string
+    Img?: string
+  }
 }
 
 export const Card: React.FC<Props> = ({ data, ...rest }) => {
@@ -25,7 +28,7 @@ export const Card: React.FC<Props> = ({ data, ...rest }) => {
     )
   return (
     <Flex
-      alignItems={{ base: "flex-start", md: "center" }}
+      alignItems={{ base: "flex-start", lg: "center" }}
       flexDir={{ base: "column", lg: "row" }}
       {...rest}
     >

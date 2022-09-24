@@ -1,14 +1,12 @@
 export interface DataType {
-  Header: string
-  SubHeading: string
-  Img?: string
+  [key: string]: {
+    Header: string
+    SubHeading: string
+    Img?: string
+  }
 }
 
-export interface Data {
-  [key: string]: DataType
-}
-
-export const AboutData: Data = {
+export const AboutData: DataType = {
   problemSolving: {
     Header: "Solving Monitary Problems",
     SubHeading:

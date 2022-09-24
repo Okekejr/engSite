@@ -1,4 +1,4 @@
-import { FlexProps, Grid, GridProps } from "@chakra-ui/react"
+import { Grid, GridProps } from "@chakra-ui/react"
 import { Card } from "./Card"
 import { DataType } from "./AboutData"
 import { FC } from "react"
@@ -16,8 +16,8 @@ export const CardsList: FC<Props> = ({ data, ...rest }) => {
       gridTemplateColumns={{ base: "1fr", md: "1fr 1fr", lg: "1fr" }}
       {...rest}
     >
-      {items.map(card => {
-        return <Card data={card} key={card._id} />
+      {items.map((card, i) => {
+        return <Card data={card} key={i} />
       })}
     </Grid>
   )
