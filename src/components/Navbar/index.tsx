@@ -51,13 +51,13 @@ export const Navbar: FC<Props> = ({ isShrunk, ...rest }) => {
         <NavLinks
           onClose={onClose}
           marginInlineEnd={{ md: "1rem" }}
-          display={{ base: "none", md: "flex" }}
+          display={{ base: "none", md: "flex", lg: "flex" }}
           background={isShrunk ? "" : "background.100"}
           backdropFilter={isShrunk ? "" : "blur(5px)"}
           borderRadius="1.25rem"
           height="2.5rem"
           padding="0 1.5rem"
-          gap={{ base: "1.2rem", lg: "0.5rem" }}
+          gap={{ base: "1.2rem", md: "1rem", lg: "0.5rem" }}
         />
 
         <LaunchAppButton

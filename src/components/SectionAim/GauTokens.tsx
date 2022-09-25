@@ -1,4 +1,4 @@
-import { Box, BoxProps, Flex, Grid } from "@chakra-ui/react"
+import { Box, BoxProps, Grid } from "@chakra-ui/react"
 import { Link } from "components/Link"
 import { icons } from "react-icons"
 import { CardElement } from "./CardElement"
@@ -18,7 +18,7 @@ export const GauTokens: React.FC<BoxProps> = ({ ...rest }) => {
         gridTemplateColumns={["1fr", "1fr", "398px 398px"]}
       >
         {items.map((icon: Icons, i) => (
-          <Link isExternal href={icon.url} key={i}>
+          <Link isExternal href={icon.url} key={i} w='fit-content'>
             <CardElement justifyContent="center" height="100%">
               {icon.icon}
             </CardElement>
