@@ -1,12 +1,15 @@
 import { FC } from "react"
 import { Hero } from "components/Hero/Hero"
-import AimPage from "components/Aim/Aim"
+import AimPage from "components/SectionAim/Aim"
+import { AboutSection } from "components/SectionAbout/About"
+import { AboutData, DataType } from "components/SectionAbout/AboutData"
 
-const PageHome: FC = () => {
+const PageHome: FC<DataType> = () => {
   return (
     <>
       <Hero />
-      <AimPage />
+      <AimPage mb={40} />
+      <AboutSection data={AboutData} />
     </>
   )
 }
