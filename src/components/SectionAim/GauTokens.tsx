@@ -18,7 +18,7 @@ export const GauTokens: React.FC<BoxProps> = ({ ...rest }) => {
         gridTemplateColumns={["1fr", "1fr", "398px 398px"]}
       >
         {items.map((icon: Icons, i) => (
-          <Link isExternal href={icon.url} key={i}>
+          <Link isExternal href={icon.url} key={i} w='fit-content'>
             <CardElement justifyContent="center" height="100%">
               {icon.icon}
             </CardElement>
