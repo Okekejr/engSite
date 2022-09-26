@@ -1,5 +1,5 @@
-import { Box, BoxProps, Flex, HStack, Text } from "@chakra-ui/react"
-import { FC, useEffect } from "react"
+import { BoxProps, HStack } from "@chakra-ui/react"
+import { FC } from "react"
 import { GauData } from "./dataFeeds/GauData"
 import { MaticData } from "./dataFeeds/MaticData"
 import { UsdtData } from "./dataFeeds/UsdtData"
