@@ -1,6 +1,5 @@
 import { FC } from "react"
 import { Grid, GridItem, GridProps } from "@chakra-ui/react"
-
 import { Social, socialsList } from "../../util/socialsList"
 import { SocialButton } from "./SocialButton"
 

@@ -1,15 +1,11 @@
 import { FC } from "react"
 import {
-  Button,
   Drawer,
   DrawerBody,
   DrawerCloseButton,
   DrawerContent,
-  DrawerFooter,
-  DrawerHeader,
   DrawerOverlay,
   DrawerProps,
-  Flex,
 } from "@chakra-ui/react"
 import { FiX } from "react-icons/fi"
 import { MobileNavLinks } from "./MobileNavLinks"
