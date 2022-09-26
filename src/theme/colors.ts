@@ -48,6 +48,7 @@ export const colors = {
   },
   text: {
     300: "#92C3EA",
+    400: "#00D1FF",
   },
   background: {
     100: background100,
