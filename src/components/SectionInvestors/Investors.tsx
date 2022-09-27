@@ -1,10 +1,16 @@
-import { Box, Heading, List } from "@chakra-ui/react"
+import { Box, BoxProps, Heading } from "@chakra-ui/react"
 import { SectionContainer } from "components/SectionContainer"
 import { FC } from "react"
+import { InvestorsType } from "./InvestorData"
+import { InvestorList } from "./InvestorList"
 
-export const InvestorsSection: FC = () => {
+interface Props extends BoxProps {
+  data: InvestorsType
+}
+
+export const InvestorsSection: FC<Props> = ({ data, ...rest }) => {
   return (
-    <SectionContainer>
+    <SectionContainer {...rest}>
       <Box zIndex={2}>
         <Heading
           my={24}
@@ -13,15 +19,7 @@ export const InvestorsSection: FC = () => {
         >
           Our Investors
         </Heading>
-        <List
-          display="grid"
-          gap={6}
-          gridTemplateColumns={{
-            base: "1fr",
-            md: "1fr 1fr",
-            lg: "1fr 1fr 1fr",
-          }}
-        ></List>
+        <InvestorList data={data} />
       </Box>
     </SectionContainer>
   )

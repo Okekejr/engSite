@@ -7,7 +7,7 @@ interface Props extends FlexProps {
 export const CardElement: React.FC<Props> = ({ children, ...rest }) => {
   return (
     <Flex
-      maxW="328px"
+      w={{ base: "340px", md: "315px", lg: "358px" }}
       border="1px solid"
       borderColor="surface.tertiary"
       backgroundColor="surface.secondary"

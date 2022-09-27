@@ -15,39 +15,39 @@ export interface InvestorsType {
 }
 
 export const InvestorsData: InvestorsType = {
-  polygon: {
-    name: "Polygon",
-    wordmark: <Polygon />,
-    url: "https://polygon.technology/",
+  chainlink: {
+    name: "Chainlink",
+    wordmark: <Chainlink w="203px" h="64px" />,
+    url: "https://chain.link/",
   },
   avalanche: {
     name: "Avalanche",
-    wordmark: <Avalanche />,
+    wordmark: <Avalanche w="202px" h="92px" />,
     url: "https://www.avalabs.org/",
   },
-  chainlink: {
-    name: "Chainlink",
-    wordmark: <Chainlink />,
-    url: "https://chain.link/",
+  openexchange: {
+    name: "OpenExchange",
+    wordmark: <OpenExchange w="303px" h="46px" />,
+    url: "https://openexchangerates.org/",
   },
   forge: {
     name: "Forge",
-    wordmark: <Forge />,
+    wordmark: <Forge w="117px" h="116px" />,
     url: "https://1forge.com/",
   },
   currencylayer: {
     name: "CurrencyLayer",
-    wordmark: <CurrencyLayer />,
+    wordmark: <CurrencyLayer w="276px" h="64px" />,
     url: "https://currencylayer.com/",
-  },
-  openexchange: {
-    name: "OpenExchange",
-    wordmark: <OpenExchange />,
-    url: "https://openexchangerates.org/",
   },
   linkpool: {
     name: "Linkpool",
-    wordmark: <Linkpool />,
+    wordmark: <Linkpool w="236px" h="86px" />,
     url: "https://linkpool.io/",
+  },
+  polygon: {
+    name: "Polygon",
+    wordmark: <Polygon w="171px" h="121px" />,
+    url: "https://polygon.technology/",
   },
 }
