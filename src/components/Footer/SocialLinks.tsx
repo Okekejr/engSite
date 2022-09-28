@@ -1,11 +1,11 @@
-import { Box, Link, Text } from "@chakra-ui/react"
+import { Box, BoxProps, Link, Text } from "@chakra-ui/react"
 import { ArrowTopRight } from "components/_icons/ArrowTopRight"
 import { FC } from "react"
 import { socialsList } from "util/socialsList"
 
-export const SocialLinks: FC = () => {
+export const SocialLinks: FC<BoxProps> = props => {
   return (
-    <Box display="flex" w="15rem">
+    <Box display="flex" {...props}>
       <Link href={socialsList.telegram.url} isExternal mr="20px">
         <Box
           display="flex"

@@ -3,6 +3,7 @@ import { Container, ContainerProps, Flex } from "@chakra-ui/react"
 import { Disclaimer } from "./Disclaimer"
 import { Copyright } from "./Copyright"
 import { SocialLinks } from "./SocialLinks"
+import { ResourceLinks } from "./ResourceLinks"
 
 export const Footer: FC<ContainerProps> = props => {
   return (
@@ -37,7 +38,8 @@ export const Footer: FC<ContainerProps> = props => {
             fontSize="sm"
             mt={{ base: 8, md: 0 }}
           />
-          <SocialLinks />
+          <ResourceLinks />
+          <SocialLinks w="15rem" />
         </Flex>
       </Flex>
     </Container>

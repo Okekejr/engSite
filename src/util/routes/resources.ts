@@ -10,7 +10,7 @@ export const resources: IRouteGroup = {
     },
     {
       id: "whitepaper-nav-item",
-      url: "https://gaugecash.gitbook.io/gaugecash/whitepaper/gaugecash-a-decentralized-monetary-system",
+      url: "https://gaugecash.gitbook.io/gaugecash/whitepaper/gaugecash-a-decentralized-monetary-system/1.-introduction-and-context",
       title: "Whitepaper",
       isExternal: true,
     },

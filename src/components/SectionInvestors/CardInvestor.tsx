@@ -15,6 +15,7 @@ export const CardInvestor: React.FC<Props> = ({ data, ...rest }) => {
       px={10}
       py={10}
       href={data.url}
+      isExternal={true}
       display="flex"
       justifyContent="center"
       alignItems="center"
