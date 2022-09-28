@@ -1,7 +1,7 @@
-import { ListItem, ListItemProps } from "@chakra-ui/react"
 import { Link } from "components/Link"
+import LinkProps from "types/LinkProps"
 
-interface Props extends ListItemProps {
+interface Props extends LinkProps {
   data: {
     name: string
     wordmark: React.ReactElement
@@ -11,9 +11,10 @@ interface Props extends ListItemProps {
 
 export const CardInvestor: React.FC<Props> = ({ data, ...rest }) => {
   return (
-    <ListItem
+    <Link
       px={10}
       py={10}
+      href={data.url}
       display="flex"
       justifyContent="center"
       alignItems="center"
@@ -26,7 +27,7 @@ export const CardInvestor: React.FC<Props> = ({ data, ...rest }) => {
       backdropFilter="blur(24px)"
       {...rest}
     >
-      <Link href={data.url}>{data.wordmark}</Link>
-    </ListItem>
+      {data.wordmark}
+    </Link>
   )
 }
