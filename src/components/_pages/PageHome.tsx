@@ -5,6 +5,8 @@ import { AboutSection } from "components/SectionAbout/About"
 import { AboutData, DataType } from "components/SectionAbout/AboutData"
 import { MobileAppSection } from "components/SectionMobile/Mobile"
 import { Team } from "components/SectionTeam/Team"
+import { InvestorsSection } from "components/SectionInvestors/Investors"
+import { InvestorsData } from "components/SectionInvestors/InvestorData"
 
 const PageHome: FC<DataType> = () => {
   return (
@@ -12,8 +14,9 @@ const PageHome: FC<DataType> = () => {
       <Hero />
       <AimPage mb={40} />
       <AboutSection data={AboutData} />
-      <MobileAppSection bgColor='primary.extraDark' />
+      <MobileAppSection bgColor="primary.extraDark" />
       <Team />
+      <InvestorsSection data={InvestorsData} />
     </>
   )
 }

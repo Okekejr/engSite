@@ -6,6 +6,8 @@ import { UsdtFeed } from "./UsdtFeed"
 export const MaticData: FC = () => {
   const [value, setValue] = useState<number | null>(null)
 
+  if (!UsdtFeed) return null
+
   useEffect(() => {
     UsdtFeed().then(price => setValue(price))
   }, [value])

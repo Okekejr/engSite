@@ -1,6 +1,5 @@
 import { Box, BoxProps, Grid } from "@chakra-ui/react"
 import { Link } from "components/Link"
-import { icons } from "react-icons"
 import { CardElement } from "./CardElement"
 import { IconList, Icons } from "./IconList"
 
