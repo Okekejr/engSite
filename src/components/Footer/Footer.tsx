@@ -2,9 +2,9 @@ import { FC } from "react"
 import { Container, ContainerProps, Flex } from "@chakra-ui/react"
 import { Disclaimer } from "./Disclaimer"
 import { Copyright } from "./Copyright"
-// import { SocialLinks } from "./SocialLinks"
+import { SocialLinks } from "./SocialLinks"
 
-export const Footer: FC<ContainerProps> = ({ ...rest }) => {
+export const Footer: FC<ContainerProps> = props => {
   return (
     <Container
       display="flex"
@@ -16,7 +16,7 @@ export const Footer: FC<ContainerProps> = ({ ...rest }) => {
       px={{ base: 4, md: 7, lg: 24 }}
       pt={{ base: 4, md: 16 }}
       zIndex={10}
-      {...rest}
+      {...props}
     >
       <Disclaimer />
       <Flex
@@ -37,7 +37,7 @@ export const Footer: FC<ContainerProps> = ({ ...rest }) => {
             fontSize="sm"
             mt={{ base: 8, md: 0 }}
           />
-          {/* <SocialLinks /> */}
+          <SocialLinks />
         </Flex>
       </Flex>
     </Container>
