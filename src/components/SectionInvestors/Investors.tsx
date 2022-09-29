@@ -3,6 +3,7 @@ import { SectionContainer } from "components/SectionContainer"
 import { FC } from "react"
 import { InvestorsType } from "./InvestorData"
 import { InvestorList } from "./InvestorList"
+import { InvestorsImage } from "./InvestorsImage"
 
 interface Props extends BoxProps {
   data: InvestorsType
@@ -11,6 +12,7 @@ interface Props extends BoxProps {
 export const InvestorsSection: FC<Props> = ({ data, ...rest }) => {
   return (
     <SectionContainer {...rest}>
+      <InvestorsImage />
       <Box zIndex={2}>
         <Heading
           my={24}

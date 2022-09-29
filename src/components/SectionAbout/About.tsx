@@ -3,6 +3,7 @@ import { GauButton } from "components/GauButton"
 import { SectionContainer } from "components/SectionContainer"
 import { FC } from "react"
 import { DataType } from "./AboutData"
+import { AboutImage } from "./AboutImage"
 import { CardsList } from "./CardsList"
 
 interface Props extends BoxProps {
@@ -36,6 +37,7 @@ export const AboutSection: FC<Props> = ({ data, ...rest }) => {
           />
         </Box>
       </Box>
+      <AboutImage />
     </SectionContainer>
   )
 }
