@@ -1,6 +1,7 @@
 {
   "name": "eng-hermanos",
   "version": "0.1.0",
+  "author": "Emmanuel Okeke",
   "private": true,
   "scripts": {
     "dev": "next dev",

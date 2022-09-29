@@ -2,10 +2,12 @@ import { SectionContainer } from "components/SectionContainer"
 import { FC } from "react"
 import { BoxProps, Box, Heading, Text, Container } from "@chakra-ui/react"
 import { GauTokens } from "./GauTokens"
+// import { AimImage } from "./AimImage"
 
 const AimPage: FC<BoxProps> = props => {
   return (
     <SectionContainer {...props}>
+      {/* <AimImage /> */}
       <Box zIndex={2}>
         <Container maxW="container.sm" position="relative" px="0" m={0}>
           <Heading
