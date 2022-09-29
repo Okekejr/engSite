@@ -2,13 +2,13 @@ import { Box, BoxProps, Container, Heading } from "@chakra-ui/react"
 import { SectionContainer } from "components/SectionContainer"
 import { FC } from "react"
 import { TeamData } from "./TeamData"
-// import { TeamImage } from "./TeamImage"
+import { TeamImage } from "./TeamImage"
 import { TeamList } from "./TeamList"
 
 export const Team: FC<BoxProps> = props => {
   return (
     <SectionContainer {...props}>
-      {/* <TeamImage /> */}
+      <TeamImage />
       <Box zIndex="2">
         <Container maxW="container.sm" position="relative" px="0" m={0}>
           <Heading

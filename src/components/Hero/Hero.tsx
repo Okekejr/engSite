@@ -1,7 +1,7 @@
 import { FC } from "react"
 import { Box, Container, Heading, Text, BoxProps } from "@chakra-ui/react"
 import { GauButton } from "components/GauButton"
-// import { HeroImage } from "./HeroImage"
+import { HeroImage } from "./HeroImage"
 
 export const Hero: FC<BoxProps> = props => {
   return (
@@ -19,7 +19,7 @@ export const Hero: FC<BoxProps> = props => {
         mb={{ base: "180px", md: "80px" }}
       >
         <Container maxW="container.xl" position="relative" px="0">
-          {/* <HeroImage /> */}
+          <HeroImage />
           <Box
             height="20vh"
             maxH="260px"
