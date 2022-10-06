@@ -5,9 +5,10 @@ export const about: IRouteGroup = {
   routes: [
     {
       id: "company-nav-item",
-      url: "/company",
+      url: "https://gaugecash.gitbook.io/gaugecash/gaugecash-1/introduction",
       title: "Company",
       active: true,
+      isExternal: true,
     },
   ],
 }
