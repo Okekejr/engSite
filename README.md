@@ -15,7 +15,7 @@ http://eng-site.vercel.app/
 This project is made with Nextjs with Typescript, Chakra UI and Ethers.js
 <br>
 
-<img src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png" alt="nextjs" width='40' height='40'>.   <img src='https://cdn.worldvectorlogo.com/logos/typescript.svg' alt='typescript' width='40' height='40'>.    <img src='https://raw.githubusercontent.com/chakra-ui/chakra-ui/main/logo/logo-colored@2x.png?raw=true' alt='chakra ui' width='150' height='40'>.    <img src='https://seeklogo.com/images/E/ethers-logo-D5B86204D8-seeklogo.com.png' alt='chakra ui' width='50' height='40'>
+<img src="https://seeklogo.com/images/N/next-js-logo-8FCFF51DD2-seeklogo.com.png" alt="nextjs" width='40' height='40'>.   <img src='https://cdn.worldvectorlogo.com/logos/typescript.svg' alt='typescript' width='40' height='40'>.    <img src='https://pbs.twimg.com/profile_images/1244925541448286208/rzylUjaf_400x400.jpg' alt='chakra ui' width='150' height='40'>.    <img src='https://seeklogo.com/images/E/ethers-logo-D5B86204D8-seeklogo.com.png' alt='chakra ui' width='50' height='40'>
 
 ## Getting Started
 
